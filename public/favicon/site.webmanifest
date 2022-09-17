@@ -1,0 +1,14 @@
+{
+    "name": "126 \u041e\u0411\u0440\u0422\u0440\u041e",
+    "short_name": "126 \u041e\u0411\u0440\u0422\u0440\u041e",
+    "icons": [
+        {
+            "src": "/android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone"
+}
