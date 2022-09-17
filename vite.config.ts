@@ -14,7 +14,7 @@ export default defineConfig({
         name: '126 ОБрТрО',
         short_name: '126 ОБрТрО',
         description: 'Допомога військовослужбовцям 126 ОБрТрО',
-        theme_color: '#000000',
+        theme_color: '#ffffff',
         icons: [
           {
             src: 'pwa-192x192.png',

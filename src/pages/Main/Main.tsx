@@ -10,7 +10,7 @@ const Main = () => {
       id: 0,
       title: 'Заспокоїтись',
       description: '',
-      path: '/help',
+      path: '/calm-down',
     },
     {
       id: 1,

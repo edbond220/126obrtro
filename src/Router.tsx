@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import Anxiety from '@pages/Anxiety/Anxiety';
+import Calm from '@pages/Calm/Calm';
 import Contacts from '@pages/Contacts/Contacts';
 import Help from '@pages/Help/Help';
 import Main from '@pages/Main/Main';
@@ -11,6 +12,7 @@ function Router() {
   return (
     <Routes>
       <Route path="/" element={<Main />} />
+      <Route path="/calm-down" element={<Calm />} />
       <Route path="/help" element={<Help />} />
       <Route path="/anxiety" element={<Anxiety />} />
       <Route path="/contacts" element={<Contacts />} />
