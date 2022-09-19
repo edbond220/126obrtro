@@ -6,7 +6,7 @@ import AppLayoutMain from '@layout/AppLayout/AppLayoutMain/AppLayoutMain';
 type AppLayoutProps = {} & React.ComponentProps<'div'>;
 
 const AppLayout = ({ children, className }: AppLayoutProps) => {
-  const classes = clsx('flex w-full bg-gray-3 min-h-screen', className);
+  const classes = clsx('flex w-full max-w-lg min-h-screen', className);
 
   return (
     <div className={classes}>

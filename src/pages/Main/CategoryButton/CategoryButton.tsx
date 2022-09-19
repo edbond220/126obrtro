@@ -11,7 +11,7 @@ const CategoryButton = ({ path, title, description = '' }: CategoryButtonProps) 
   return (
     <Link
       to={path}
-      className="flex flex-col items-center bg-blue-900 text-white p-8 rounded-2xl text-3xl"
+      className="category-button flex flex-col items-center text-white p-8 rounded-3xl text-3xl"
     >
       <h2>{title}</h2>
       {description && <div>{description}</div>}

@@ -12,7 +12,7 @@ body {
 }
 
 #root {
-  @apply w-full h-full flex
+  @apply w-full h-full flex justify-center;
 }
 
 .container {
@@ -37,4 +37,11 @@ body {
 
 .overlay:after {
   @apply content-[''] fixed w-full h-full bg-black opacity-50 left-0 top-0;
+}
+
+.category-button {
+  background-size: 200% auto;
+  background-position: right center;
+  background-image: linear-gradient(to right, #614385 0%, #516395  51%, #614385  100%);
+  /*background-image: linear-gradient(to right, #1F1C2C 0%, #928DAB  51%, #1F1C2C  100%)*/
 }

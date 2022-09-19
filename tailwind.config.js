@@ -10,6 +10,7 @@ module.exports = {
         white: '#FFFFFF',
         black: '#000000',
         blue: {
+          4: '#5b58ec',
           5: '#40a9ff',
         },
         purple: {

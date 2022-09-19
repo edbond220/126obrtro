@@ -9,6 +9,18 @@ const Help = () => {
       <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut debitis expedita
         laboriosam, nostrum provident quaerat reprehenderit sint? At aut distinctio eos eum neque
+        obcaecati quasi quod saepe ut vitae! Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Accusantium aut debitis expedita laboriosam, nostrum provident quaerat reprehenderit
+        sint? At aut distinctio eos eum neque obcaecati quasi quod saepe ut vitae! Lorem ipsum dolor
+        sit amet, consectetur adipisicing elit. Accusantium aut debitis expedita laboriosam, nostrum
+        provident quaerat reprehenderit sint? At aut distinctio eos eum neque obcaecati quasi quod
+        saepe ut vitae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut
+        debitis expedita laboriosam, nostrum provident quaerat reprehenderit sint? At aut distinctio
+        eos eum neque obcaecati quasi quod saepe ut vitae! Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Accusantium aut debitis expedita laboriosam, nostrum provident quaerat
+        reprehenderit sint? At aut distinctio eos eum neque obcaecati quasi quod saepe ut vitae!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut debitis expedita
+        laboriosam, nostrum provident quaerat reprehenderit sint? At aut distinctio eos eum neque
         obcaecati quasi quod saepe ut vitae!
       </div>
     </AppLayout>
