@@ -4,7 +4,7 @@
 
 
 html, body {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Rubik', Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 body {
@@ -43,5 +43,4 @@ body {
   background-size: 200% auto;
   background-position: right center;
   background-image: linear-gradient(to right, #614385 0%, #516395  51%, #614385  100%);
-  /*background-image: linear-gradient(to right, #1F1C2C 0%, #928DAB  51%, #1F1C2C  100%)*/
 }

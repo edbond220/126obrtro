@@ -2,18 +2,18 @@ import React, { useEffect, useState } from 'react';
 
 import AppLayout from '@layout/AppLayout/AppLayout';
 
-type PageState = 'wait' | 'play';
+type PageState = 'wait' | 'start' | 'playing' | 'stop';
 type BreathType = 'inhale' | 'exhale';
 
 const Calm = () => {
-  let interval: any;
+  let interval: NodeJS.Timer;
   const maxBreath = 4;
   const [breathCount, setBreathCount] = useState(0);
   const [breathType, setBreathType] = useState<BreathType>('inhale');
   const [pageState, setPageState] = useState<PageState>('wait');
 
   const handleStart = () => {
-    setPageState('play');
+    setPageState('playing');
   };
 
   const handleStop = () => {
@@ -27,32 +27,35 @@ const Calm = () => {
     clearInterval(interval);
   };
 
-  useEffect(() => {
-    if (pageState === 'play') {
-      interval = setInterval(() => {
-        if (breathCount === maxBreath) {
-          setBreathCount(0);
-          if (breathType === 'inhale') {
-            setBreathType('exhale');
-          } else {
-            setBreathType('inhale');
-          }
-        }
-        setBreathCount((count) => count + 1);
-      }, 1000);
-    } else {
-      endPlay();
+  const breath = () => {
+    console.log('breath');
+    if (breathCount === maxBreath) {
+      setBreathCount(0);
+      if (breathType === 'inhale') {
+        setBreathType('exhale');
+      } else {
+        setBreathType('inhale');
+      }
     }
-    return () => clearInterval(interval);
+    setBreathCount((count) => count + 1);
+  };
+
+  useEffect(() => {
+    if (pageState === 'playing') {
+      interval = setInterval(breath, 1000);
+    }
+    return () => {
+      return clearInterval(interval);
+    };
   }, [pageState, breathCount, breathType]);
 
   return (
     <AppLayout>
       <div>
         {pageState === 'wait' && <button onClick={handleStart}>Старт</button>}
-        {pageState === 'play' && <button onClick={handleStop}>Закінчити</button>}
+        {pageState === 'playing' && <button onClick={handleStop}>Закінчити</button>}
       </div>
-      {pageState === 'play' && (
+      {pageState === 'playing' && (
         <div className="flex flex-col justify-center align-center text-center">
           <h1 className="text-3xl">{breathType === 'inhale' ? 'Вдох' : 'Видох'} </h1>
           <h2 className="text-4xl">{breathCount}</h2>

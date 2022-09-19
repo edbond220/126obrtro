@@ -9,12 +9,14 @@ const AppLayoutHeader = ({}: AppLayoutHeaderProps) => {
   const match = useMatch('/');
 
   return (
-    <header className="fixed flex bg-white py-4 px-8 w-full justify-between align-center">
-      <div>{!match && <ArrowLeft onClick={() => navigate(-1)} size={32} />}</div>
-      <div className="text-2xl font-medium">126 ОБрТрО</div>
-      <Link to="/" className="flex w-8 h-8">
-        <img src="/logo.svg" alt="Логотип" />
-      </Link>
+    <header className="fixed left-0 top-0 flex justify-center w-full">
+      <div className="flex max-w-lg flex bg-white py-4 px-8 w-full justify-between align-center">
+        <div className="w-8">{!match && <ArrowLeft onClick={() => navigate(-1)} size={32} />}</div>
+        <div className="text-2xl font-medium">126 ОБрТрО</div>
+        <Link to="/" className="flex w-8 h-8">
+          <img src="/logo.svg" alt="Логотип" />
+        </Link>
+      </div>
     </header>
   );
 };

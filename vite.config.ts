@@ -1,10 +1,21 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
+import { VitePluginFonts } from 'vite-plugin-fonts';
 
 export default defineConfig({
   plugins: [
     react(),
+    VitePluginFonts({
+      google: {
+        families: [
+          {
+            name: 'Rubik',
+            styles: 'ital,wght@0,400;1,200',
+          },
+        ],
+      },
+    }),
     VitePWA({
       registerType: 'autoUpdate',
       devOptions: {
@@ -17,17 +28,23 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: 'pwa-192x192.png',
+            src: 'favicons/android-chrome-192x192.png',
             sizes: '192x192',
-            type: 'image/png'
+            type: 'image/png',
           },
           {
-            src: 'pwa-512x512.png',
+            src: 'favicons/android-chrome-512x512.png',
             sizes: '512x512',
-            type: 'image/png'
-          }
-        ]
-      }
+            type: 'image/png',
+          },
+          {
+            src: 'favicons/android-chrome-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
+      },
     }),
   ],
   resolve: {
