@@ -11,6 +11,19 @@ body {
   height: auto !important;
 }
 
+
+.body-calm {
+  background: linear-gradient(-45deg, #ff6539, #643c90);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  height: 100vh;
+  color: #fff;
+}
+
+.body-calm .app-layout-header {
+  background: transparent !important;
+}
+
 #root {
   @apply w-full h-full flex justify-center;
 }
@@ -43,4 +56,16 @@ body {
   background-size: 200% auto;
   background-position: right center;
   background-image: linear-gradient(to right, #614385 0%, #516395  51%, #614385  100%);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
