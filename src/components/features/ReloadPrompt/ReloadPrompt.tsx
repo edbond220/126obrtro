@@ -28,7 +28,7 @@ function ReloadPrompt() {
         <div className="reloadPrompt-toast">
           <div className="reloadPrompt-message">
             {offlineReady ? (
-              <span>App ready to work offline</span>
+              <span>Додаток оновився</span>
             ) : (
               <span>New content available, click on reload button to update.</span>
             )}
