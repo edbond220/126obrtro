@@ -26,9 +26,12 @@
       "@pages/*": ["./pages/*"],
       "@data/*": ["./data/*"],
       "@/*": ["./*"]
-    }
+    },
+    "types": [
+      "vite-plugin-pwa/client"
+    ]
   },
-  "include": ["src"],
+  "include": ["src", "node_modules/vite-plugin-pwa/client.d.ts"],
   "exclude": [
     "dist",
     "node_modules",
